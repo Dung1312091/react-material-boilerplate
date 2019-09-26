@@ -3,16 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.4.3",
+    "axios": "^0.19.0",
+    "connected-react-router": "^6.5.2",
+    "lodash.get": "^4.4.2",
+    "qs": "^6.9.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.2"
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.0",
+    "react-scripts": "3.1.2",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.1.1",
+    "reselect": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint-check": "eslint .",
+    "eslint-fix": "eslint . --fix"
   },
+  "pre-commit": [
+    "eslint-check"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -27,5 +42,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.18.2",
+    "redux-devtools-extension": "^2.13.8"
   }
 }

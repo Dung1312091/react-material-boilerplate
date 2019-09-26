@@ -1,0 +1,23 @@
+@import "../../assets/styles/_variables.scss";
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    background-color: $secondary-bg;
+    padding: 0 20px;
+    border-top: 1px solid #333333;
+
+    img {
+        margin-left: 25px;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 11px;
+        margin-left: 20px;
+        color: #666666;
+        line-height: 1.5;
+    }
+}
